@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stockverse</title>
+    <link rel="stylesheet" href="home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  </head>
+
+  <body>
+    <section id="header">
+      <nav class="navigation">
+        <div class="nav-left">
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="about.html">About</li></a>
+
+            <div class="ref" onmouseout="nodisplay()" onmouseover="display()">
+              <li>
+                <button onclick="display()" class="b1" onmouseover="display()">
+                  Reference
+                </button>
+              </li>
+              <div id="Dropdown" class="links">
+                <a href="http://www.moneycontrol.com/">moneycontrol</a>
+                <a href="https://trendlyne.com/">trendlyne</a>
+                <a href="https://www.nseindia.com/">nseindia</a>
+                <a href="https://www.worldbank.org/">worldbank</a>
+                <a href="https://ticker.finology.in/">finology</a>
+              </div>
+            </div>
+
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+           <a href="login.html"> <button class="btn" onclick="togle()"> Log in</button></a>
+        <a href="sign.html"><button class="btn">Sign up</button></a> 
+        </div>
+      </nav>
+    </section>
+
+<img src="siu.jpeg" id="viu" />
+  
+    <section id="hero">
+      <div class="logo">
+        
+      </div>
+      <marquee id="zgt" behavior="" direction="left" onmouseover="this.stop();"
+      onmouseout="this.start();"> <b>
+      Stock analysis and guidance tool for teenagers in India</b></marquee>
+
+      <div class="wrapper">
+        <div class="x">
+          <input
+            type="text"
+            id="mySearch"
+            class="input"
+            onkeyup="key()"
+            placeholder="Search Companies.."
+            title="Type in a category"
+          />
+          <ul type="none" id="items">
+          <li><button>Asian Paints</button></li>
+          <li><button>Ambuja Cements</button></li>
+          <li><button>Axis Bank</button></li>
+          <li><button>Bajaj Finance</button></li>
+          <li><button>BPCL</button></li>
+          <li><button>Bank of Baroda</button></li>
+          <li><button>Cipla</button></li>
+          <li><button>Dr Reddys Laboratories</button></li>
+          <li><button>DLF</button></li>
+          <li><button>Godrej</button></li>
+          <li><button>Hindustan Unilever Ltd</button></li>
+          <li><button>HDFC</button></li>
+          <li><button>IRCTC</button></li>
+          <li><button>Jindal Steel</button></li>
+          <li><button>Kotak Mahindra Bank</button></li>
+          <li><button>Muthoot Finance</button></li>
+          <li><button>ONGC</button></li>
+          <li><button>Reliance</button></li>
+          <li><button>Sun Pharma</button></li>
+          <li><button>Tata Steel</button></li>
+          <li><button>Tata Motors</button></li>
+        </ul>
+        </div>
+      </div>
+    </section>
+         <div class="stock-images">
+
+      <img src="" alt="" id="stock">
+      <button class="btnn" onclick="hide()" id="hidden"> Hide</button>
+  </div>
+    <section id="footer">
+      <h2>StockVerse</h2>
+      <p>
+        <br />
+        An initiative by Teen-stonks to provide an idea <br />
+        about the stock market and it's importance to teenagers.
+      </p>
+
+      <h4><br />Follow us</h4>
+
+      <div class="icons">
+        <a href="https://www.facebook.com/aditya.roysha/" target="_blank"
+          ><img src="image/f.png" alt=""
+        /></a>
+        <a href="https://www.instagram.com/singhvikash7077/?hl=en" target="_blank"> <img src="image/i.png" alt="" /></a>
+
+        <a href="https://github.com/Ssakshid" target="_blank"
+          ><img src="image/g.png" alt=""
+        /></a>
+        <a href="https://www.linkedin.com/in/nitin-chaudhary-332161230" target="_blank"> <img src="image/l.png" alt="" /></a>
+      </div>
+      <div class="copyright">
+        <p>&copy;2022, Teen-stonks</p>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
